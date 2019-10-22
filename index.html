@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>
+      page one
+    </title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="one.css" />
+
+    <!-- <script src="index.js"></script> -->
+    <!-- <script src="let.js"></script> -->
+    <!-- <script src="class.js"></script> -->
+    <!-- <script src="jsonexmple.js"></script> -->
+    <script src="formvalidation.js"></script>
+    <!-- <script src="objesctexpm.js"></script> -->
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand " href="#">Myfisrtpage</a>
+        <!-- brand is for big text(compony name) -->
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">One </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Two</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="">Disabled</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >DropDown</a
+            >
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="">dropdown1</a>
+              <a class="dropdown-item" href="">dropdown2</a>
+            </div>
+          </li>
+
+          <li class="nav-item mr-auto">
+            <button id="Buttonclick" type="button" class=" btn btn-primary">
+              sucess
+              <span class="badge badge-danger">96</span>
+              <a class="badge badge-pill badge-success" href="#">swara</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <p id="demo"></p>
+      </div>
+    </header>
+
+    <!-- <h1>Hello World !</h1>
+        <p>click me i will disappear</p>
+        <button onclick="clickme()">click me</button> -->
+
+    <form>
+      <label>Value1 :</label>
+      <input type="text" name="Value1" id="first" required />
+      <br />
+      <label>operator :</label>
+      <input type="text" name="ValueOp" id="operator" /><br />
+      <label>Value2 :</label>
+      <input type="text" name="Value2" id="second" /><br />
+      <button type="button" id="Calculate" onclick="calculate()">
+        Calculate
+      </button>
+      <button type="button" id="checkitup">
+        click me
+      </button>
+
+      <input type="text" id="result" name="result" />
+      <!-- <p>Hey the sum is : <span id="result"></span></p> -->
+    </form>
+
+    <form
+      action="/action_page.php"
+      name="myForm"
+      onsubmit="return validateForm()"
+      method="POST"
+    >
+      <label> Enter a Number :</label>
+      <input type="text" name="number" required />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h1 id="displaymyname">!</h1>
+    <!-- class.js file has code for it -->
+
+    <p id="firstjsonexample">JSON example</p>
+  </body>
+</html>
