@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.navbar {
+  max-width: 100%;
+  height: 20%;
+  background-color: aqua;
+}
+
+.content {
+  width: 100%;
+  height: 60%;
+  background-color: rosybrown;
+  display: inline-block;
+  margin: auto;
+}
+.contente1 {
+  background-color: rgb(230, 138, 63);
+  border: 1px solid red;
+  height: 90%;
+  margin: 10px;
+  float: left;
+  width: 30%;
+}
+
+.footer {
+  width: 100%;
+  height: 20%;
+  background-color: rgb(51, 255, 0);
+}
